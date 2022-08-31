@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c1d7db;
+}
+.burger {
+  display: none;
+}
+.logo {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo svg {
+  margin-left: 5px;
+  border-radius: 50px;
+  font-size: 25px;
+}
+.logo a {
+  font-size: 35px;
+  color: #282d2e;
+}
+
+.settings svg {
+  position: relative;
+  font-size: 35px;
+  margin-right: 10px;
+}
+.profileicon svg {
+  position: relative;
+  font-size: 35px;
+  margin-right: 10px;
+}
+.notification svg {
+  position: relative;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.header_icon {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.switchTheme input {
+  transform: scale(2);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.switchTheme {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10px;
+}
+.theme {
+  margin-right: 5px;
+  color: #282d2e;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1d7db;
+  }
+  .burger {
+    display: block;
+  }
+  .logo {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo svg {
+    border-radius: 50px;
+    font-size: 15px;
+  }
+  .logo a {
+    font-size: 20px;
+    color: #282d2e;
+  }
+
+  .settings svg {
+    position: relative;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .profileicon svg {
+    position: relative;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  .notification svg {
+    position: relative;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  .header_icon {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .switchTheme input {
+    transform: scale(1.5);
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .switchTheme {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .theme {
+    display: none;
+  }
+}
